@@ -1,0 +1,180 @@
+.header-container111 {
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    z-index: 1002;
+    border-bottom: 1px solid #f3f3f9;
+}
+
+
+.pagecooooo {
+    margin-top: 40px;
+}
+
+body {
+    background-color: #009933;
+}
+
+.custom-profileview:hover {
+    background-color: #009933;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.custom-page-content {
+    margin-top: 20px
+}
+
+/* ###################################################################################################### */
+
+.dashboard-container {
+    width: calc(80% - 20px);
+    height: calc(100vh - 90px);
+    display: flex;
+    overflow: auto;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.dashboard-top {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dashboard-top1 {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 10px rgb(235, 235, 235);
+}
+
+.dashboard-top1-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dashboard-top1-item {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.dashboard-bottom {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.dashboard-table-title {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.dashboard-table-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dashboard-table-buttons {
+    padding: 10px;
+    margin-left: 1px;
+    margin-right: 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.dashboard-table-buttons-acti {
+    padding: 10px;
+    margin-left: 1px;
+    margin-right: 2px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(241, 165, 23);
+}
+
+.dashboard-table-buttons:hover {
+    background-color: rgb(241, 165, 23);
+    color: white;
+}
+
+.dashboard-table-search-button {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.container-export-button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    background-color: #009933;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+}
+
+.container-export-button:hover {
+    background-color: rgb(241, 165, 23);
+}
+
+.export-button {
+    margin-left: 4px;
+}
+
+.leftbar-header1 {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.table-cc {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.table-constant-1 {
+    position: relative;
+}
+
+/* ########################## */
+
+.datatable-selection-demo .card h6 {
+    margin-top: 2rem;
+}
+
+.datatable-selection-demo .card h6:first-of-type {
+    margin-top: 0;
+}
+
+/* ############################# */
+
+/* ###################################################################################################### */

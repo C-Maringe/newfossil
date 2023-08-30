@@ -1,0 +1,239 @@
+//
+// _topbar.scss
+//
+
+#page-topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1002;
+  background-color: $header-bg;
+  transition: all 0.1s ease-out;
+
+  &.topbar-shadow {
+    box-shadow: $box-shadow;
+  }
+
+  @media (min-width: 768px) {
+    left: $vertical-menu-width;
+  }
+}
+
+.navbar-header {
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: $header-height;
+  padding: 0 $grid-gutter-width 0 calc(#{$grid-gutter-width} / 2)
+  /*rtl: 0 0 0 calc(#{$grid-gutter-width} / 2) */
+  ;
+
+  @media (max-width: 767.98px) {
+    padding: 0 calc(#{$grid-gutter-width} / 2) 0 calc(#{$grid-gutter-width} / 2);
+  }
+
+  .topbar-head-dropdown {
+    .dropdown-menu.show {
+      top: 13px !important;
+    }
+  }
+
+  .btn-topbar {
+    height: 42px;
+    width: 42px;
+
+    @media (max-width: 360px) {
+      height: 36px;
+      width: 36px;
+    }
+  }
+
+  .user-name-text {
+    color: var(--#{$variable-prefix}gray-700);
+  }
+}
+
+/* Search */
+
+.app-search {
+  padding: calc(#{$header-height - 38px} / 2) 0;
+
+  .form-control {
+    border: none;
+    height: 38px;
+    padding-left: 40px;
+    padding-right: 30px;
+    background-color: $topbar-search-bg;
+    box-shadow: none;
+  }
+
+  span.search-widget-icon {
+    position: absolute;
+    z-index: 10;
+    font-size: 18px;
+    line-height: 38px;
+    left: 13px;
+    top: 0;
+    color: $gray-600;
+  }
+
+  .search-widget-icon-close {
+    right: 7px;
+    left: auto !important;
+  }
+
+  @media (max-width: 1023.99px) {
+    padding-left: calc(#{$grid-gutter-width} / 2);
+  }
+}
+
+// Mega menu
+
+.megamenu-list {
+  li {
+    position: relative;
+    padding: 5px 0px;
+
+    a {
+      color: $dropdown-color;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .logo {
+    span.logo-lg {
+      display: none;
+    }
+
+    span.logo-sm {
+      display: inline-block;
+    }
+  }
+}
+
+.header-item {
+  height: $header-height;
+  display: flex;
+  align-items: center;
+}
+
+.header-profile-user {
+  height: 32px;
+  width: 32px;
+}
+
+.topbar-badge-sm {
+  right: 0;
+  top: 7px !important;
+}
+
+.topbar-badge {
+  right: -9px;
+  top: 4px !important;
+}
+
+.topbar-user {
+  @media (min-width: 768px) {
+    background-color: $topbar-user-bg;
+  }
+
+  .dropdown-menu {
+    top: 6px !important;
+  }
+}
+
+.notification-item {
+  padding: 0.75rem 1rem;
+  white-space: inherit;
+  position: relative;
+
+  .form-check-input {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+// Dropdown with Icons
+.dropdown-icon-item {
+  display: block;
+  border-radius: 3px;
+  line-height: 34px;
+  text-align: center;
+  padding: 15px 0 9px;
+  border: 1px solid transparent;
+  color: $dropdown-link-color;
+
+  img {
+    height: 24px;
+  }
+
+  span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &:hover {
+    background-color: $dropdown-link-hover-bg;
+  }
+}
+
+// Full Screen
+.fullscreen-enable {
+  [data-toggle="fullscreen"] {
+    .bx-fullscreen::before {
+      content: "\eacb";
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .navbar-header {
+    .dropdown {
+      position: static;
+
+      .dropdown-menu {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  #search-dropdown-reponsive {
+    top: 54px !important;
+  }
+}
+
+// #page-topbar {
+//   left: 0;
+//   border-bottom: 1px solid var(--#{$variable-prefix}gray-300);
+
+//   @media (min-width: 1024.1px) {
+//     &.topbar-shadow {
+//       box-shadow: none;
+//     }
+//   }
+// }
+
+// .page-content {
+//   @media (min-width: 1024.1px) {
+//     margin-top: $header-height;
+//   }
+
+//   padding: calc(45px + #{$grid-gutter-width}) calc(#{$grid-gutter-width} / 2) $footer-height calc(#{$grid-gutter-width} / 2);
+// }
+
+// &[data-layout-width="boxed"] {
+//   .page-content {
+//     @media (min-width: 1024.1px) {
+//       min-height: calc(100vh - #{$footer-height + $header-height});
+//     }
+//   }
+// }
